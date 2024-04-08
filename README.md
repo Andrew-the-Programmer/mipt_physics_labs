@@ -1,4 +1,4 @@
-<<<ADDING YOUR LAB>>>
+# ADDING YOUR LAB
 
 Feel free to contribute your own labs, but follow the rules:
 
@@ -6,11 +6,15 @@ Lets assume you want to push lab named <lab_name> (f.e. "2.3.1").
 Create a nickname (<your_nickname>). (mine is "Andrew"). You will use it every time.
 
 1. Clone repo.
+```bash
 git clone git@gitlab.com:group-15380145/mipt_physics_labs.git
 cd mipt_physics_labs
+```
 
 2. Create new branch named: "<lab_name>_<your_nickname>" and switch to it.
-```git switch -c <lab_name>_<your_nickname>```
+```bash
+git switch -c <lab_name>_<your_nickname>
+```
 
 3. If <lab_name> folder does not exists, create it.
 
