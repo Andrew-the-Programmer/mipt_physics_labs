@@ -19,7 +19,7 @@ cd mipt_physics_labs
 5. Put your lab files in <lab_name>/<your_nickname>.
 
 6. Push <lab_name>_<your_nickname> branch to origin.
-git push <lab_name>_<your_nickname> origin
+git push origin <lab_name>_<your_nickname>
 
 7. In gitlab create MR (merge request) to branch main, give me (@Andrew-the-Programmer) the Reviewer role.
 
