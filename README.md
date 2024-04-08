@@ -23,7 +23,9 @@ git switch -c <lab_name>_<your_nickname>
 5. Put your lab files in <lab_name>/<your_nickname>.
 
 6. Push <lab_name>_<your_nickname> branch to origin.
+```bash
 git push origin <lab_name>_<your_nickname>
+```
 
 7. In gitlab create MR (merge request) to branch main, give me (@Andrew-the-Programmer) the Reviewer role.
 
