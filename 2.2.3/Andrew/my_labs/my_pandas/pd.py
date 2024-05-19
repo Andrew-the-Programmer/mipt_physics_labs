@@ -11,7 +11,7 @@ from my_labs.my_plt import SetXY
 class FrameSlice:
     columns: slice = attr.field(default=slice(None))
     rows: slice = attr.field(default=slice(None))
-    
+
     def __init__(self, columns=None, rows=None):
         if columns is not None:
             self.columns = columns
@@ -20,7 +20,7 @@ class FrameSlice:
 
 
 def GetData(data: pd.DataFrame, frame_slice: FrameSlice) -> np.ndarray:
-    return np.array(data.iloc[frame_slice.rows, frame_slice.columns])
+    return data.iloc[frame_slice.rows, frame_slice.columns]
 
 
 def GetDataXY(
@@ -42,7 +42,7 @@ def GetDataXY(
 
     if ykwargs is None:
         ykwargs = dict()
-    
+
     if kwargs is None:
         kwargs = dict()
 

@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Iterable
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import linregress
@@ -36,7 +36,7 @@ def plot_xyset(xyset: SetXY, *, config: dict = None, **kwargs):
     if config is None:
         config = dict(
             linestyle="",
-            fmt=".",
+            # fmt=".",
         )
     plt.errorbar(
         x=xyset.x.value,
@@ -178,3 +178,12 @@ def Plot(
     # plt.show()
     if close:
         plt.close()
+
+
+def PlotDataSet(
+    dataset: Iterable[SetXY],
+    *,
+    kwargs,
+):
+    for d in dataset:
+        plot_xyset(d.as_numeric(), **kwargs)
