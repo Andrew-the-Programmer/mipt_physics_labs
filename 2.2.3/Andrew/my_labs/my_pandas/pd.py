@@ -11,6 +11,12 @@ from my_labs.my_plt import SetXY
 class FrameSlice:
     columns: slice = attr.field(default=slice(None))
     rows: slice = attr.field(default=slice(None))
+    
+    def __init__(self, columns=None, rows=None):
+        if columns is not None:
+            self.columns = columns
+        if rows is not None:
+            self.rows = rows
 
 
 def GetData(data: pd.DataFrame, frame_slice: FrameSlice) -> np.ndarray:
