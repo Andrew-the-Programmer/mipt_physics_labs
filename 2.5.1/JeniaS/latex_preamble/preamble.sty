@@ -19,7 +19,7 @@
 \usepackage{hyperref}
 \usepackage[rgb]{xcolor}
 \hypersetup{
-colorlinks=true,urlcolor=blue
+	colorlinks=true,urlcolor=blue
 }
 %%% tables
 % \usepackage{enumitem} %% for effortless customization of enumeration (windows)
@@ -78,35 +78,39 @@ colorlinks=true,urlcolor=blue
 
 %% Перенос знаков в формулах (по Львовскому)
 \newcommand*{\hm}[1]{#1\nobreak\discretionary{}
-{\hbox{$\mathsurround=0pt #1$}}{}}
+	{\hbox{$\mathsurround=0pt #1$}}{}}
 
 \newcommand {\Title} [4] {
-\begin{titlepage}
-	\begin{center}
-	{\large МОСКОВСКИЙ ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ (НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ)}
-	\end{center}
-	\begin{center}
-	{\large Физтех-школа прикладной математики и информатики}
-	\end{center}
-	
-	\vspace{4.5cm}
-	{\large
-	\begin{center}
-	{\bf #1 #2}\\
-		#3
-	\end{center}
-	}	
-	\vspace{2cm}
-	\begin{flushright}
-	{\large Автор:\\ Чикин Андрей Павлович \\
-	\vspace{0.2cm}
-	Б05-304}
-	\end{flushright}
-	\vspace{8cm}
-	\begin{center}
-	Долгопрудный, 2023
-	\end{center}
-\end{titlepage}
+	\begin{titlepage}
+		\begin{center}
+			\includegraphics[width=10cm,height=7cm,keepaspectratio]{mipt_eng_text_png.png}\\
+		\end{center}
+
+		\begin{center}
+			{\large МОСКОВСКИЙ ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ (НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ)}
+		\end{center}
+		\begin{center}
+			{\large Физтех-школа прикладной математики и информатики}
+		\end{center}
+
+		\vspace{3cm}
+		{\large
+			\begin{center}
+				{\bf #1 #2}\\
+				#3
+			\end{center}
+		}
+		\vspace{2cm}
+		\begin{flushright}
+			{\large Автор:\\ Чикин Андрей Павлович \\
+				\vspace{0.2cm}
+				Б05-304}
+		\end{flushright}
+		\vspace{8cm}
+		\begin{center}
+			Долгопрудный, 2023
+		\end{center}
+	\end{titlepage}
 }
 
 \date{\today}
