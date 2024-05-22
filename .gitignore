@@ -9,4 +9,5 @@ ignore
 *.out
 *.synctex.gz
 *.toc
+/.*
 __pycache__
