@@ -1,0 +1,36 @@
+\usepackage{my_preamble}
+\usepackage{my_units}
+
+% #1 - Author
+% #2 - Title
+\newcommand{\Title}[3][Чикин Андрей Павлович] {
+	\begin{titlepage}
+		\begin{center}
+			\includegraphics[width=10cm,height=7cm,keepaspectratio]{./data/mipt_eng_text_png.png}\\
+		\end{center}
+
+		\begin{center}
+			{\large МОСКОВСКИЙ ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ (НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ)}
+		\end{center}
+		\begin{center}
+			{\large Физтех-школа прикладной математики и информатики}
+		\end{center}
+
+		\vspace{3cm}
+		{\large
+			\begin{center}
+				{\bf #2}\\% Title
+			\end{center}
+		}
+		\vspace{2cm}
+		\begin{flushright}
+			{\large Автор:\\ #1 \\% Author
+				\vspace{0.2cm}
+				Б05-304}
+		\end{flushright}
+		\vspace{8cm}
+		\begin{center}
+			Долгопрудный, 2024
+		\end{center}
+	\end{titlepage}
+}
