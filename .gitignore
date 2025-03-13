@@ -11,3 +11,4 @@ ignore
 *.toc
 /.*
 __pycache__
+.~lock.*
